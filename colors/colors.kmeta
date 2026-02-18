@@ -1,0 +1,19 @@
+{
+	"project": "colors",
+	"version": "0.0.1",
+	"description": "A simple console colors library for KSL, supported by the official KSL team.",
+	"authors": [{
+		"name": "KSL Team",
+		"id": "ksl",
+		"contact": "ksl@kslng.org"
+	}],
+	"license": "MIT",
+	"requirements": [],
+	"os_behavior": {
+		"windows": {
+			"link": [
+				"colors.o"
+			]
+		}
+	}
+}
