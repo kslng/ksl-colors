@@ -27,6 +27,37 @@ colors.reset; // resets terminal to default scheme
 > More colors are likely to be added in the future. This library mainly supports
 > the KSL compiler, so when the compiler needs new colors they'll be added here.
 
+## Examples
+
+Below are a collection of examples, keep in mind that the terminal color will
+stay until explicitly reset, which is why most of these examples end with the
+reset string.
+
+Show a debug message (where `[DEBUG]` is yellow):
+
+```ksl
+io.writeln("{str}[DEBUG] {str}{str}".format(
+	colors.yellow,
+	colors.reset,
+	"My debug message"
+));
+```
+
+Show a completely cyan message:
+
+```ksl
+io.writeln("{str}Hello World, but in Cyan!!{str}".format(
+	colors.cyan,
+	colors.reset
+));
+```
+
+Change the terminal foreground color to green (and don't reset it):
+
+```ksl
+io.writeln("{str}".format(colors.green));
+```
+
 ## Notes
 
 The colors library should work on all platforms. Since command prompt on Windows
